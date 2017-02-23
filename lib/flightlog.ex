@@ -1,0 +1,2 @@
+defmodule Flightlog do
+end
