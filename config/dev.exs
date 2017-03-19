@@ -36,8 +36,8 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :flightlog, Flightlog.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
-  database: "flightlog_dev",
+  username: "michal",
+  password: "pwd",
+  database: "flightlog",
   hostname: "localhost",
   pool_size: 10
