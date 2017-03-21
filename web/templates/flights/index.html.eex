@@ -1,0 +1,7 @@
+<div class="jumbotron">
+  <h2>List of flights</h2>
+  <table>
+    <tr><th>Date</th><th>Flight Number</th><th>Details</th></tr>
+    <tr><th>13.03.2017</th><th>SK753</th><th><a href="/flights/1">-></a></th></tr>
+  </table>
+</div>

@@ -1,0 +1,11 @@
+<div class="jumbotron">
+  <h2>Flight details</h2>
+  <%= if @id=="1" do %>
+    <strong>Date:</strong> 13.03.2017</br>
+    <strong>Flight Number:</strong>SK 753</br>
+    <strong>From:</strong> CPH</br>
+    <strong>To:</strong> GDN</br>
+  <% else %>
+    No information about flight <%= @id %> ;( !
+  <% end %>
+</div>
