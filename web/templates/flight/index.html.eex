@@ -1,0 +1,32 @@
+<h2>Listing flights</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Flight number</th>
+      <th>From</th>
+      <th>To</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for flight <- @flights do %>
+    <tr>
+      <td><%= flight.date %></td>
+      <td><%= flight.flight_number %></td>
+      <td><%= flight.from %></td>
+      <td><%= flight.to %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: flight_path(@conn, :show, flight), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: flight_path(@conn, :edit, flight), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: flight_path(@conn, :delete, flight), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New flight", to: flight_path(@conn, :new) %>
