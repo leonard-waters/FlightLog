@@ -16,9 +16,7 @@ defmodule Flightlog.Router do
   scope "/", Flightlog do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
-    get "/flights", FlightsController, :index
-    get "/flights/:id", FlightsController, :show
+    resources "/flights", FlightController
   end
 
   # Other scopes may use custom stacks.
