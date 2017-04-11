@@ -12,6 +12,11 @@
     <%= @flight.flight_number %>
   </li>
 
+    <li>
+    <strong>Plane Type</strong>
+    <%= @flight.plane_type %>
+  </li>
+
   <li>
     <strong>From:</strong>
     <%= @flight.from %>

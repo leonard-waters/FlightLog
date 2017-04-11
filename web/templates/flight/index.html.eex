@@ -5,6 +5,7 @@
     <tr>
       <th>Date</th>
       <th>Flight number</th>
+      <th>Plane type</th>
       <th>From</th>
       <th>To</th>
 
@@ -16,6 +17,7 @@
     <tr>
       <td><%= flight.date %></td>
       <td><%= flight.flight_number %></td>
+      <td><%= flight.plane_type %></td>
       <td><%= flight.from %></td>
       <td><%= flight.to %></td>
 
