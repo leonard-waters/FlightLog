@@ -12,19 +12,19 @@
     <%= @flight.flight_number %>
   </li>
 
-    <li>
+  <li>
     <strong>Plane Type</strong>
     <%= @flight.plane_type %>
   </li>
 
   <li>
     <strong>From:</strong>
-    <%= @flight.from %>
+    <%= @flight.from %> (<%= location(@flight.from) %>)
   </li>
 
   <li>
     <strong>To:</strong>
-    <%= @flight.to %>
+    <%= @flight.to %> (<%= location(@flight.to) %>)
   </li>
 
 </ul>
