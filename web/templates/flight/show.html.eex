@@ -27,6 +27,11 @@
     <%= @flight.to %> (<%= location(@flight.to) %>)
   </li>
 
+  <li>
+    <strong>Distance:</strong>
+    <%= distance(coords(@flight.from), coords(@flight.to)) %>
+  </li>
+
 </ul>
 
 <%= link "Edit", to: flight_path(@conn, :edit, @flight) %>
