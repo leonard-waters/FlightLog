@@ -4,12 +4,12 @@
 
   <li>
     <strong>Departure:</strong>
-    <%= @flight.departure_date %>
+    <%= formatTime(@flight.departure_date, @flight.from) %>
   </li>
 
   <li>
     <strong>Arrival:</strong>
-    <%= @flight.arrival_date %>
+    <%= formatTime(@flight.arrival_date, @flight.to) %>
   </li>
 
     <li>

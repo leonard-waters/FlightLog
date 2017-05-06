@@ -16,8 +16,8 @@
   <tbody>
 <%= for flight <- @flights do %>
     <tr>
-      <td><%= flight.departure_date %></td>
-      <td><%= flight.arrival_date %></td>
+      <td><%= formatTime(flight.departure_date, flight.from) %></td>
+      <td><%= formatTime(flight.arrival_date, flight.to) %></td>
       <td><%= flight.flight_number %></td>
       <td><%= flight.plane_type %></td>
       <td><%= flight.from %></td>

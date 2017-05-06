@@ -25,4 +25,10 @@ defmodule Flightlog.FlightView do
   def time(time1, time2) do
     Flightlog.Math.flightTime(time1, time2)
   end
+
+  def formatTime(timestamp, airport) do
+
+      Timex.format!(Timex.to_datetime(timestamp, "Etc/UTC"), "{D} {Mshort} {YYYY} {h24}:{m}")
+  end
+
 end
