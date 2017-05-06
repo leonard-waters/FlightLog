@@ -17,4 +17,11 @@ defmodule Flightlog.Math do
 
         degDistance * earthRadius
     end
+
+    def flightTime(earlier, later) do
+        hours = Timex.diff(later, earlier, :hours)
+        minutes = rem(Timex.diff(later, earlier, :minutes), 60)
+        "#{hours}:#{minutes}"
+    end
+
 end

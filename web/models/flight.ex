@@ -2,8 +2,8 @@ defmodule Flightlog.Flight do
   use Flightlog.Web, :model
 
   schema "flights" do
-    field :departure_date, Ecto.DateTime
-    field :arrival_date, Ecto.DateTime
+    field :departure_date, Timex.Ecto.DateTimeWithTimezone
+    field :arrival_date, Timex.Ecto.DateTimeWithTimezone
     field :flight_number, :string
     field :plane_type, :string
     field :from, :string

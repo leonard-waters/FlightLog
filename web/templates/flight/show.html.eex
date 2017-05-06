@@ -12,6 +12,11 @@
     <%= @flight.arrival_date %>
   </li>
 
+    <li>
+    <strong>Flight Time:</strong>
+    <%= time(@flight.departure_date, @flight.arrival_date) %>
+  </li>
+
   <li>
     <strong>Flight number:</strong>
     <%= @flight.flight_number %>

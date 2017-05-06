@@ -22,4 +22,7 @@ defmodule Flightlog.FlightView do
     Flightlog.Math.greatCircle(coords1, coords2)
   end
 
+  def time(time1, time2) do
+    Flightlog.Math.flightTime(time1, time2)
+  end
 end
