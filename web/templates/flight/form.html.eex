@@ -6,9 +6,15 @@
   <% end %>
 
   <div class="form-group">
-    <%= label f, :date, class: "control-label" %>
-    <%= datetime_select f, :date, class: "form-control" %>
-    <%= error_tag f, :date %>
+    <%= label f, :departure_date, class: "control-label" %>
+    <%= datetime_select f, :departure_date, class: "form-control" %>
+    <%= error_tag f, :departure_date %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, :arrival_date, class: "control-label" %>
+    <%= datetime_select f, :arrival_date, class: "form-control" %>
+    <%= error_tag f, :arrival_date %>
   </div>
 
   <div class="form-group">

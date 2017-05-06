@@ -3,8 +3,13 @@
 <ul>
 
   <li>
-    <strong>Date:</strong>
-    <%= @flight.date %>
+    <strong>Departure:</strong>
+    <%= @flight.departure_date %>
+  </li>
+
+  <li>
+    <strong>Arrival:</strong>
+    <%= @flight.arrival_date %>
   </li>
 
   <li>

@@ -2,7 +2,8 @@ defmodule Flightlog.Flight do
   use Flightlog.Web, :model
 
   schema "flights" do
-    field :date, Ecto.DateTime
+    field :departure_date, Ecto.DateTime
+    field :arrival_date, Ecto.DateTime
     field :flight_number, :string
     field :plane_type, :string
     field :from, :string
@@ -16,7 +17,7 @@ defmodule Flightlog.Flight do
   """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:date, :flight_number, :plane_type, :from, :to])
-    |> validate_required([:date, :flight_number, :plane_type, :from, :to])
+    |> cast(params, [:departure_date, :arrival_date, :flight_number, :plane_type, :from, :to])
+    |> validate_required([:departure_date, :arrival_date, :flight_number, :plane_type, :from, :to])
   end
 end
